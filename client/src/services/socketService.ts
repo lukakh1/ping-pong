@@ -6,6 +6,7 @@ export class SocketService {
 
   constructor() {
     this.socket = io('http://13.53.35.146');
+    console.log(this.socket, 'this.socket')
   }
 
   onConnect(callback: () => void): void {
@@ -14,6 +15,7 @@ export class SocketService {
 
   onPlayerAssigned(callback: (data: PlayerAssignedData) => void): void {
     this.socket.on('playerAssigned', callback);
+    console.log(this.socket, 'player')
   }
 
   onGameFull(callback: () => void): void {
