@@ -5,7 +5,7 @@ export class SocketService {
   private socket: Socket;
 
   constructor() {
-    this.socket = io('http://13.53.35.146:3001');
+    this.socket = io('http://13.53.35.146');
   }
 
   onConnect(callback: () => void): void {
