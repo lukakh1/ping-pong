@@ -5,7 +5,7 @@ export class SocketService {
   private socket: Socket;
 
   constructor() {
-    this.socket = io('http://13.53.35.146');
+    this.socket = io('https://ec2-13-53-35-146.eu-north-1.compute.amazonaws.com');
     console.log(this.socket, 'this.socket')
   }
 
